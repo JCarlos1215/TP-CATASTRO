@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Catastro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <span class="header"> <span><img src="logo.svg" alt=""></span>
+    <h1 class="comapny-name">Dirección General de Catastro <br>Municipal Manzanillo</h1>
+    <p>Solicitud de registro y declaración del<br>pago de impuesto</p>
+    <!-- partial:index.partial.html -->
+    <div>
+      <span class="escritura">Naturaleza del Acto:</span><br>
+      <input type="text" placeholder="Ingresar" class="dotted2" style=" text-align:center;" value="">
+    </div>
+    <div>
+      <span class="escritura2">Escritura Pública No. </span><br>
+      <input type="text" placeholder="ingresar" class="dotted3" style=" text-align:center;" value="">
+    </div>
+    <div>
+      <span class="firma1"> Fecha de Firma </span><br>
+      <input type="date" class="dotted4" style="text-align:center;" value="29/10/24">
+    </div>
+    <div>
+      <span class="firma2">Fecha Ejecutoria</span><br>
+      <input type="date" class="dotted5" style="text-align:center;" value="29/10/24">
+    </div>
+  </span>
+
+
+
+  <!-- <form class="voucher" id="voucherForm" method="post" action="" name="voucherForm"> -->
+
+  <div class="b">
+    <u class="title">DATOS DEL (LOS) TRANSMITENTE (S)</u><br>
+    <div class="content"><br>
+      <div class="section top">
+        <div>
+          <span class="field-label">Nombre:</span>
+          <input type="text" placeholder="Ingresar Nombre completo" class="dotted" style="width: 300px" value="">
+        </div>
+        <div>
+          <span class="field-label">Curp:</span>
+          <input type="text" class="dotted" placeholder="ingresar curp" style="width: 300px" value="">
+        </div>
+        <div>
+          <span class="field-label">RFC:</span>
+          <input type="number" class="dotted" placeholder="ingresar RFC" style="width: 140px" value="">
+        </div>
+        <div>
+          <span class="field-label">Correo Electronico:</span>
+          <input type="email" placeholder="Correo Electronico" class="dotted" style="width: 300px" value="">
+        </div>
+        <div>
+          <span class="field-label">Calle:</span>
+          <input type="text" class="dotted" placeholder="ingresar Calle" style="width: 200px" value="">
+        </div>
+        <div>
+          <span class="field-label">Colonia:</span>
+          <input type="number" placeholder="ingresar Colonia" class="dotted" style="width: 120px" value="">
+        </div>
+        <div>
+          <span class="field-label">CP:</span>
+          <input type="number" placeholder="ingresar CP" class="dotted" style="width: 100px" value="">
+        </div>
+        <div>
+          <span class="field-label">Poblacion:</span>
+          <input type="text" class="dotted" placeholder="ingresar Población" style="width: 200px" value="">
+        </div>
+        <div>
+          <span class="field-label">Municipio:</span>
+          <input type="number" class="dotted" placeholder="ingresar Municipio" style="width: 160px" value="">
+        </div>
+        <div>
+          <span class="field-label">Estado:</span>
+          <input type="number" class="dotted" placeholder="Estado" style="width: 160px" value="">
+        </div>
+      </div><br>
+    </div>
+  </div>
+
+  <div class="b">
+    <u class="title">DATOS DEL (LOS) ADQUIRIENTES (S)</u><br>
+    <div class="content"><br>
+      <div class="section top">
+        <div>
+          <span class="field-label">Nombre:</span>
+          <input type="text" placeholder="Ingresar Nombre completo" class="dotted" style="width: 300px" value="">
+        </div>
+        <div>
+          <span class="field-label">Curp:</span>
+          <input type="text" class="dotted" placeholder="ingresar curp" style="width: 300px" value="">
+        </div>
+        <div>
+          <span class="field-label">RFC:</span>
+          <input type="number" class="dotted" placeholder="ingresar RFC" style="width: 140px" value="">
+        </div>
+        <div>
+          <span class="field-label">Correo Electronico:</span>
+          <input type="email" placeholder="Correo Electronico" class="dotted" style="width: 300px" value="">
+        </div>
+        <div>
+          <span class="field-label">Calle:</span>
+          <input type="text" class="dotted" placeholder="ingresar Calle" style="width: 200px" value="">
+        </div>
+        <div>
+          <span class="field-label">Colonia:</span>
+          <input type="number" placeholder="ingresar Colonia" class="dotted" style="width: 120px" value="">
+        </div>
+        <div>
+          <span class="field-label">CP:</span>
+          <input type="number" placeholder="ingresar CP" class="dotted" style="width: 100px" value="">
+        </div>
+        <div>
+          <span class="field-label">Poblacion:</span>
+          <input type="text" class="dotted" placeholder="ingresar Población" style="width: 200px" value="">
+        </div>
+        <div>
+          <span class="field-label">Municipio:</span>
+          <input type="number" class="dotted" placeholder="ingresar Municipio" style="width: 160px" value="">
+        </div>
+        <div>
+          <span class="field-label">Estado:</span>
+          <input type="number" class="dotted" placeholder="ingresar Estado" style="width: 160px" value="">
+        </div>
+
+      </div>
+      <BR></BR>
+
+      <table>
+        <div class="c">
+          <u class="title3">DATOS DEL INMUEBLE OBJETO DE LA TRANSMISÓN</u><br>
+          <div class="section top">
+            <div>
+              <span class="field-label">Ubicación:</span>
+              <input type="text" class="dotted"
+                placeholder="Calle         Num Ext           Num Int(letra)       Colonia       CP       "
+                style="width: 600px" value="">
+            </div>
+            <div>
+              <span class="field-label">Localidad:</span>
+              <input type="text" class="dotted" placeholder="ingresar Localidad" style="width: 300px" value="">
+            </div>
+            <div>
+              <span class="field-label">Municipio:</span>
+              <input type="text" class="dotted" placeholder="ingresar Municipio" style="width: 140px" value="">
+            </div>
+            <div>
+              <span class="field-label">Clave Catastral:</span>
+              <input type="text" class="dotted" placeholder="ingresar Clave Catastral" style="width: 170px" value="">
+            </div>
+            <div>
+              <span class="field-label">No. De Cuenta:</span>
+              <input type="text" class="dotted" placeholder="Ingresa No de Cuenta" style="width: 200px" value="">
+            </div>
+            <div>
+              <span class="field-label">Superficie M²/Escrituras:</span>
+              <input type="text" class="dotted" style="width: 120px" value="">
+            </div>
+
+          </div>
+          <br>
+          <p
+            style=" font-weight: 500; text-align:center; top: -10px; left:20px; overflow: hidden; white-space: nowrap;font-size:14px  ">
+            ÁREA QUE
+            CONSTITUYE AL TÍTULO ANT.
+          </p>
+          <div class="section top">
+            <div>
+              <span class="field-label">Total:</span>
+              <input type="text" class="dotted" style="width: 100px" value="">
+            </div>
+            <div>
+              <span class="field-label">Fracc:</span>
+              <input type="text" class="dotted" style="width: 100px" value="">
+            </div>
+            <div>
+              <span class="field-label">Resto:</span>
+              <input type="number" class="dotted" style="width: 100px" value="">
+            </div>
+            <div>
+              <span class="field-label">Accion:</span>
+              <input type="number" class="dotted" style="width: 100px" value="">
+            </div>
+            <div>
+              <span class="field-label">Fracc:</span>
+              <input type="date" class="dotted" style="width: 200px" value="">
+            </div>
+            <div class="section footer">
+              <div>
+                <span class="field-label">Resto:</span>
+                <input type="number" class="dotted" style="width: 100px" value="200">
+              </div>
+              <div>
+                <span class="field-label">Accion:</span>
+                <input type="number" class="dotted" style="width: 100px" value="200">
+
+              </div>
+              <p style=" font-weight: 500; text-align:center; top: 25px;left:-10px; font-size:14px ">MEDIDAS Y
+                COLINDANTES
+              </p>
+
+              <br><br><br><br>
+              <div class="section footer">
+                <div>
+                  <span class="field-label">AL NORTE:</span>
+                  <input type="text" class="dotted" style="width: 635px" value="">
+                </div>
+
+                <div>
+
+                  <span class="field-label">AL SUR:</span>
+                  <input type="text" class="dotted" style="width: 650px" value="">
+                </div>
+                <div>
+                  <span class="field-label">AL ORIENTE:</span>
+                  <input type="text" class="dotted" style="width: 625px" value="">
+                </div>
+                <div>
+                  <span class="field-label">AL PONIENTE:</span>
+                  <input type="text" class="dotted" style="width: 617px" value="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </table>
+      <table>
+        <div class="e">
+          <br>
+          <u class="title5">ANTECEDENTES DE PROPIEDAD</u><br>
+          <br>
+          <div class="section top">
+            <div>
+              <span class="field-label">Propietario Anterior:</span>
+              <input type="text" class="dotted" placeholder="Ingresar Nombre " style="width: 300px" value="">
+            </div>
+            <div>
+              <span class="field-label">Fecha de Firma:</span>
+              <input type="date" class="dotted" style="width: 120px" value="">
+            </div>
+            <div>
+              <span class="field-label">No. Escritura:</span>
+              <input type="text" class="dotted" placeholder="No. Escritura" style="width: 140px" value="">
+            </div>
+            <div>
+              <span class="field-label">Folio Real:</span>
+              <input type="text" class="dotted" placeholder="ingresar Folio" style="width: 120px" value="">
+            </div>
+            <div>
+              <span class="field-label">Fecha de Registro:</span>
+              <input type="date" class="dotted" style="width: 120px" value="">
+            </div>
+          </div>
+        </div>
+        <div class="e">
+          <br>
+          <u class="title5">DATOS DEL NOTARIO RESPONSABLE</u><br>
+          <br>
+          <div class="section top">
+            <div>
+              <span class="field-label">Nombre:</span>
+              <input type="text" class="dotted" placeholder="imgresar Nombre" style="width: 300px" value="">
+            </div>
+            <div>
+              <span class="field-label">Notaria No.</span>
+              <input type="number" class="dotted" style="width: 60px" value="">
+            </div>
+            <div>
+              <span class="field-label">Demarcación:</span>
+              <input type="text" class="dotted" style="width: 100px" value="">
+            </div>
+            <div>
+              <br>
+              <u class="title6">DETERMINACIÓN DE LA BASE GRAVABLE Y LIQUIDACIÓN DE PAGO DEL IMPUESTO SOBRE TRANSMISIÓN
+                PATRIMONIAL</u> <br>
+              <br>
+            </div>
+            <br>
+            <div>
+              <span class="field-label">Valor Catastral: $</span>
+              <input type="number" class="dotted" style="width: 100px " value="">
+            </div>
+            <div>
+              <span class="field-label">Valor de la Operación: $</span>
+              <input type="number" class="dotted" style="width: 100px" value="">
+            </div>
+            <div>
+              <span class="field-label">Valor Avalúo Comercial: $</span>
+              <input type="number" class="dotted" style="width: 100px" value="">
+            </div>
+            <div class="section footer">
+            </div>
+          </div>
+      </table>
+    </div>
+    <!-- ------------------------------------------------------>
+
+    <article>
+      <h1>Recipient</h1>
+      <address contenteditable>
+
+      </address>
+      <table class="meta">
+        <tr>
+          <th><span contenteditable>Valor Base</span></th>
+          <td><span contenteditable>&#36;</span></td>
+        </tr>
+        <tr>
+          <th><span contenteditable>Limite Inferior</span></th>
+          <td><span contenteditable>&#36;</span></td>
+        </tr>
+        <tr>
+          <th><span contenteditable>Base Del Impuesto</span></th>
+          <td><span contenteditable>&#36;</span></td>
+          <!-- <td style="padding:3px  3px" border-width: 1px;><input type="text" id="datepicker" placeholder="Select Date"> -->
+          </td>
+        </tr>
+        <tr>
+          <th><span contenteditable>Recargos</span></th>
+          <td><span contenteditable>&#36;</span></td>
+          <!-- <td style="padding:3px  3px" border-width: 1px;><input type="text" id="datepicker" placeholder="Select Date"> -->
+        </tr>
+        <tr>
+          <th><span contenteditable>Multa</span></th>
+          <td><span contenteditable>&#36;</span></td>
+        </tr>
+        <tr>
+          <th><span contenteditable>Total</span></th>
+          <td><span contenteditable>&#36;</span></td>
+        </tr>
+        <tr>
+
+        </tr>
+      </table>
+      <!-- <table class="inventory">
+        <thead>
+          <tr>
+            <th><span contenteditable>Item</span></th>
+            <th><span contenteditable>Description</span></th>
+            <th><span contenteditable>Rate</span></th>
+            <th><span contenteditable>Quantity</span></th>
+            <th><span contenteditable>Price</span></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><a class="cut">-</a><span contenteditable>MahiWeb Domain</span></td>
+            <td><span contenteditable>Domain charges</span></td>
+            <td><span data-prefix>&#36; </span> <span contenteditable>150.00</span></td>
+            <td><span contenteditable>4</span></td>
+            <td><span data-prefix>&#36;</span> <span>600.00</span></td>
+          </tr>
+
+        </tbody>
+      </table> -->
+      <a class="add">+</a>
+    </article>
+
+</body>
+<!----------------article---------------------------------------->
+
+<aside class="central_btn">
+  <button onclick="myFunction()" style="cursor:pointer"><i class="fa fa-print" aria-hidden="true"></i> exportar
+    Documento</button>
+  <!-- <button id="cmd"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Save PDF</button> -->
+</aside>
+<section class="signature">
+  <!-- <div>
+      <p>For Mahindrakar Agencies</p>
+      <p>Rajkumar Mahindrakar
+      <p>
+    </div> -->
+</section>
+<!-- Jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+<script>
+  function myFunction() {
+    window.print();
+  }
+  $(function () {
+    $("#datepicker").datepicker({
+      dateFormat: 'dd / mm / yy'
+    });
+
+  });
+
+  var date = new Date();
+
+  var day = date.getDate();
+  var month = date.getMonth() + 1;
+  var year = date.getFullYear();
+
+  if (month < 10) month = "0" + month;
+  if (day < 10) day = "0" + day;
+
+  var today = day + " / " + month + " / " + year;
+
+
+  document.getElementById('datepicker').value = today;
+</script>
+<!-- partial -->
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js'></script>
+<script src="./script.js"></script>
+
+</body>
+
+</html>
