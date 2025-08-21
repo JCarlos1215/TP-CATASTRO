@@ -11,225 +11,287 @@
 </head>
 
 <body>
-  <span class="header"> <span><img src="logo.svg" alt=""></span>
-    <h1 class="comapny-name">Dirección General de Catastro <br>Municipal Manzanillo</h1>
-    <p>Solicitud de registro y declaración del<br>pago de impuesto</p>
-    <!-- partial:index.partial.html -->
-    <div>
-      <span class="escritura">Naturaleza del Acto:</span><br>
-      <input type="text" placeholder="Ingresar" class="dotted2" style=" text-align:center;" value="">
+  <div class="contenedor-principal">
+    <div class="elemento">
+      <span class="header"> <span><img src="logo.svg" alt=""></span>
+        <h1 class="comapny-name">Dirección General de Catastro <br>Municipal Manzanillo</h1>
+        <p>Solicitud de registro y declaración del<br>pago de impuesto</p>
+        <!-- partial:index.partial.html -->
+        <div>
+          <span class="escritura">Naturaleza del Acto:</span><br>
+          <input type="text" placeholder="Ingresar" class="dotted2" style=" text-align:center;" value="">
+        </div>
+        <div>
+          <span class="escritura2">Escritura Pública No. </span><br>
+          <input type="text" placeholder="ingresar" class="dotted3" style=" text-align:center;" value="">
+        </div>
+        <div>
+          <span class="firma1"> Fecha de Firma </span><br>
+          <input type="date" class="dotted4" style="text-align:center;" value="29/10/24">
+        </div>
+        <div>
+          <span class="firma2">Fecha Ejecutoria</span><br>
+          <input type="date" class="dotted5" style="text-align:center;" value="29/10/24">
+        </div>
+      </span>
     </div>
-    <div>
-      <span class="escritura2">Escritura Pública No. </span><br>
-      <input type="text" placeholder="ingresar" class="dotted3" style=" text-align:center;" value="">
-    </div>
-    <div>
-      <span class="firma1"> Fecha de Firma </span><br>
-      <input type="date" class="dotted4" style="text-align:center;" value="29/10/24">
-    </div>
-    <div>
-      <span class="firma2">Fecha Ejecutoria</span><br>
-      <input type="date" class="dotted5" style="text-align:center;" value="29/10/24">
-    </div>
-  </span>
-
+  </div>
 
 
   <!-- <form class="voucher" id="voucherForm" method="post" action="" name="voucherForm"> -->
 
   <div class="b">
-    <u class="title">DATOS DEL (LOS) TRANSMITENTE (S)</u><br>
-    <div class="content"><br>
-      <div class="section top">
+
+    <u class="title">DATOS DEL (LOS) TRANSMITENTE (S)</u>
+
+    <div id="contenedor-principal" class="content">
+      <div id="div-a-clonar" class="section top elemento">
+        <data>
+          <br><br><span class="field-label valor-span"></span><br>
+        </data>
         <div>
-          <span class="field-label">Nombre:</span>
-          <input type="text" placeholder="Ingresar Nombre completo" class="dotted" style="width: 300px" value="">
+          <span class="field-label valor-span">Nombre:</span>
+          <input type="text" placeholder="Ingresar Nombre completo" class="dotted nombre-input" style="width: 300px"
+            value="">
         </div>
         <div>
-          <span class="field-label">Curp:</span>
-          <input type="text" class="dotted" placeholder="ingresar curp" style="width: 300px" value="">
+          <span class="field-label valor-span">Curp:</span>
+          <input type="text" class="dotted nombre-input" placeholder="ingresar curp" style="width: 300px" value="">
         </div>
         <div>
-          <span class="field-label">RFC:</span>
-          <input type="text" class="dotted" placeholder="ingresar RFC" style="width: 140px" value="">
+          <span class="field-label valor-span">RFC:</span>
+          <input type="text" class="dotted nombre-input" placeholder="ingresar RFC" style="width: 140px" value="">
         </div>
         <div>
-          <span class="field-label">Correo Electronico:</span>
-          <input type="email" placeholder="Correo Electronico" class="dotted" style="width: 300px" value="">
+          <span class="field-label valor-span">Correo Electronico:</span>
+          <input type="email" placeholder="Correo Electronico" class="dotted nombre-input" style="width: 300px"
+            value="">
         </div>
         <div>
-          <span class="field-label">Calle:</span>
-          <input type="text" class="dotted" placeholder="ingresar Calle" style="width: 200px" value="">
+          <span class="field-label valor-span">Calle:</span>
+          <input type="text" class="dotted nombre-input" placeholder="ingresar Calle" style="width: 200px" value="">
         </div>
         <div>
-          <span class="field-label">Colonia:</span>
-          <input type="text" placeholder="ingresar Colonia" class="dotted" style="width: 120px" value="">
+          <span class="field-label valor-span">Colonia:</span>
+          <input type="text" placeholder="ingresar Colonia" class="dotted nombre-input" style="width: 120px" value="">
         </div>
         <div>
-          <span class="field-label">CP:</span>
-          <input type="text" placeholder="ingresar CP" class="dotted" style="width: 100px" value="">
+          <span class="field-label valor-span">CP:</span>
+          <input type="text" placeholder="ingresar CP" class="dotted nombre-input" style="width: 100px" value="">
         </div>
         <div>
-          <span class="field-label">Poblacion:</span>
-          <input type="text" class="dotted" placeholder="ingresar Población" style="width: 200px" value="">
+          <span class="field-label valor-span">Poblacion:</span>
+          <input type="text" class="dotted nombre-input" placeholder="ingresar Población" style="width: 200px" value="">
         </div>
         <div>
-          <span class="field-label">Municipio:</span>
-          <input type="text" class="dotted" placeholder="ingresar Municipio" style="width: 160px" value="">
+          <span class="field-label valor-span">Municipio:</span>
+          <input type="text" class="dotted nombre-input" placeholder="ingresar Municipio" style="width: 160px" value="">
         </div>
         <div>
-          <span class="field-label">Estado:</span>
-          <input type="text" class="dotted" placeholder="Estado" style="width: 160px" value="">
+          <span class="field-label valor-span">Estado:</span>
+          <input type="text" class="dotted nombre-input" placeholder="Estado" style="width: 160px" value="">
         </div>
-      </div><br>
+        <BR></BR><button class="eliminar-elemento add">-</button>
+
+
+      </div><button id="agregar-elemento" class="cut">+</button>
+
+
+
     </div>
+
   </div>
 
+  <!--  ========================== DATOS DEL (LOS) ADQUIRIENTES (S)====================================  -->
+  <div class="b2">
+
+    <u class="title">DATOS DEL (LOS) ADQUIRIENTES (S)</u>
+
+    <div id="contenedor-principal2" class="content">
+      <div class="section top elemento2">
+        <data>
+          <br><br><span class="field-label valor-span2"></span><br>
+        </data>
+        <div>
+          <span class="field-label valor-span2">Nombre:</span>
+          <input type="text" placeholder="Ingresar Nombre completo" class="dotted nombre-input2" style="width: 300px"
+            value="">
+        </div>
+        <div>
+          <span class="field-label valor-span2">Curp:</span>
+          <input type="text" class="dotted nombre-input2" placeholder="ingresar curp" style="width: 300px" value="">
+        </div>
+        <div>
+          <span class="field-label valor-span2">RFC:</span>
+          <input type="text" class="dotted nombre-input2" placeholder="ingresar RFC" style="width: 140px" value="">
+        </div>
+        <div>
+          <span class="field-label valor-span2">Correo Electronico:</span>
+          <input type="email" placeholder="Correo Electronico" class="dotted nombre-input2" style="width: 300px"
+            value="">
+        </div>
+        <div>
+          <span class="field-label valor-span2">Calle:</span>
+          <input type="text" class="dotted nombre-input2" placeholder="ingresar Calle" style="width: 200px" value="">
+        </div>
+        <div>
+          <span class="field-label valor-span2">Colonia:</span>
+          <input type="text" placeholder="ingresar Colonia" class="dotted nombre-input2" style="width: 120px" value="">
+        </div>
+        <div>
+          <span class="field-label valor-span2">CP:</span>
+          <input type="text" placeholder="ingresar CP" class="dotted nombre-input2" style="width: 100px" value="">
+        </div>
+        <div>
+          <span class="field-label valor-span2">Poblacion:</span>
+          <input type="text" class="dotted nombre-input2" placeholder="ingresar Población" style="width: 200px"
+            value="">
+        </div>
+        <div>
+          <span class="field-label valor-span2">Municipio:</span>
+          <input type="text" class="dotted nombre-input2" placeholder="ingresar Municipio" style="width: 160px"
+            value="">
+        </div>
+        <div>
+          <span class="field-label valor-span2">Estado:</span>
+          <input type="text" class="dotted nombre-input2" placeholder="Estado" style="width: 160px" value="">
+        </div>
+        <button class="eliminar-elemento2 add">-</button>
+
+      </div><button id="agregar-elemento2" class="cut">+</button>
+    </div>
+
+  </div>
+  <!--  ========================== DATOS DEL (LOS) ADQUIRIENTES (S)====================================  -->
   <div class="b">
-    <u class="title">DATOS DEL (LOS) ADQUIRIENTES (S)</u><br>
-    <div class="content"><br>
-      <div class="section top">
-        <div>
-          <span class="field-label">Nombre:</span>
-          <input type="text" placeholder="Ingresar Nombre completo" class="dotted" style="width: 300px" value="">
-        </div>
-        <div>
-          <span class="field-label">Curp:</span>
-          <input type="text" class="dotted" placeholder="ingresar curp" style="width: 300px" value="">
-        </div>
-        <div>
-          <span class="field-label">RFC:</span>
-          <input type="text" class="dotted" placeholder="ingresar RFC" style="width: 140px" value="">
-        </div>
-        <div>
-          <span class="field-label">Correo Electronico:</span>
-          <input type="email" placeholder="Correo Electronico" class="dotted" style="width: 300px" value="">
-        </div>
-        <div>
-          <span class="field-label">Calle:</span>
-          <input type="text" class="dotted" placeholder="ingresar Calle" style="width: 200px" value="">
-        </div>
-        <div>
-          <span class="field-label">Colonia:</span>
-          <input type="text" placeholder="ingresar Colonia" class="dotted" style="width: 120px" value="">
-        </div>
-        <div>
-          <span class="field-label">CP:</span>
-          <input type="number" placeholder="ingresar CP" class="dotted" style="width: 100px" value="">
-        </div>
-        <div>
-          <span class="field-label">Poblacion:</span>
-          <input type="text" class="dotted" placeholder="ingresar Población" style="width: 200px" value="">
-        </div>
-        <div>
-          <span class="field-label">Municipio:</span>
-          <input type="text" class="dotted" placeholder="ingresar Municipio" style="width: 160px" value="">
-        </div>
-        <div>
-          <span class="field-label">Estado:</span>
-          <input type="text" class="dotted" placeholder="ingresar Estado" style="width: 160px" value="">
-        </div>
-
-      </div>
-      <BR></BR>
-
-      <table>
-        <div class="c">
-          <u class="title3">DATOS DEL INMUEBLE OBJETO DE LA TRANSMISÓN</u><br>
-          <div class="section top">
-            <div>
-              <span class="field-label">Ubicación:</span>
-              <input type="text" class="dotted"
-                placeholder="Calle         Num Ext           Num Int(letra)       Colonia       CP       "
-                style="width: 600px" value="">
-            </div>
-            <div>
-              <span class="field-label">Localidad:</span>
-              <input type="text" class="dotted" placeholder="ingresar Localidad" style="width: 300px" value="">
-            </div>
-            <div>
-              <span class="field-label">Municipio:</span>
-              <input type="text" class="dotted" placeholder="ingresar Municipio" style="width: 140px" value="">
-            </div>
-            <div>
-              <span class="field-label">Clave Catastral:</span>
-              <input type="text" class="dotted" placeholder="ingresar Clave Catastral" style="width: 170px" value="">
-            </div>
-            <div>
-              <span class="field-label">No. De Cuenta:</span>
-              <input type="text" class="dotted" placeholder="Ingresa No de Cuenta" style="width: 200px" value="">
-            </div>
-            <div>
-              <span class="field-label">Superficie M²/Escrituras:</span>
-              <input type="text" class="dotted" style="width: 120px" value="">
-            </div>
-
-          </div>
+    <div class="content">
+      <div>
+        <table>
           <br>
-          <p
-            style=" font-weight: 500; text-align:center; top: -10px; left:20px; overflow: hidden; white-space: nowrap;font-size:14px  ">
-            ÁREA QUE
-            CONSTITUYE AL TÍTULO ANT.
-          </p>
-          <div class="section top">
-            <div>
-              <span class="field-label">Total:</span>
-              <input type="text" class="dotted" style="width: 100px" value="">
+          <div class="c">
+            <u class="title3">DATOS DEL INMUEBLE OBJETO DE LA TRANSMISÓN</u><br>
+            <div class="section top">
+              <div>
+                <span class="field-label">Ubicación:</span>
+                <input type="text" class="dotted"
+                  placeholder="Calle         Num Ext           Num Int(letra)       Colonia       CP       "
+                  style="width: 600px" value="">
+              </div>
+              <div>
+                <span class="field-label">Localidad:</span>
+                <input type="text" class="dotted" placeholder="ingresar Localidad" style="width: 300px" value="">
+              </div>
+              <div>
+                <span class="field-label">Municipio:</span>
+                <input type="text" class="dotted" placeholder="ingresar Municipio" style="width: 140px" value="">
+              </div>
+              <div>
+                <span class="field-label">Clave Catastral:</span>
+                <input type="text" class="dotted" placeholder="ingresar Clave Catastral" style="width: 170px" value="">
+              </div>
+              <div>
+                <span class="field-label">No. De Cuenta:</span>
+                <input type="text" class="dotted" placeholder="Ingresa No de Cuenta" style="width: 200px" value="">
+              </div>
+              <div>
+                <span class="field-label">Superficie M²/Escrituras:</span>
+                <input type="text" class="dotted" style="width: 120px" value="">
+              </div>
+
             </div>
-            <div>
-              <span class="field-label">Fracc:</span>
-              <input type="text" class="dotted" style="width: 100px" value="">
-            </div>
-            <div>
-              <span class="field-label">Resto:</span>
-              <input type="number" class="dotted" style="width: 100px" value="">
-            </div>
-            <div>
-              <span class="field-label">Accion:</span>
-              <input type="text" class="dotted" style="width: 100px" value="">
-            </div>
-            <div>
-              <span class="field-label">Fracc:</span>
-              <input type="date" class="dotted" style="width: 200px" value="">
-            </div>
-            <div class="section footer">
+            <br>
+            <p
+              style=" font-weight: 500; text-align:center; top: -10px; left:20px; overflow: hidden; white-space: nowrap;font-size:14px  ">
+              ÁREA QUE
+              CONSTITUYE AL TÍTULO ANT.
+            </p>
+            <div class="section top">
+              <div>
+                <span class="field-label">Total:</span>
+                <input type="text" class="dotted" style="width: 100px" value="">
+              </div>
+              <div>
+                <span class="field-label">Fracc:</span>
+                <input type="text" class="dotted" style="width: 100px" value="">
+              </div>
               <div>
                 <span class="field-label">Resto:</span>
-                <input type="number" class="dotted" style="width: 100px" value="200">
+                <input type="text" class="dotted" style="width: 100px" value="">
               </div>
               <div>
                 <span class="field-label">Accion:</span>
-                <input type="text" class="dotted" style="width: 100px" value="200">
-
+                <input type="text" class="dotted" style="width: 100px" value="">
               </div>
-              <p style=" font-weight: 500; text-align:center; top: 25px;left:-10px; font-size:14px ">MEDIDAS Y
+              <p style=" font-weight: 500; text-align:center; top: 25px;left:290px; font-size:14px ">MEDIDAS Y
                 COLINDANTES
               </p>
 
               <br><br><br><br>
               <div class="section footer">
                 <div>
-                  <span class="field-label">AL NORTE:</span>
-                  <input type="text" class="dotted" style="width: 635px" value="">
+
+                  <select style="width: 90px;" class="field-label">
+                    <option value="NORTE">NORTE</option>
+                    <option value="SUR">SUR</option>
+                    <option value="ESTE">ESTE</option>
+                    <option value="OESTE">OESTE</option>
+                    <option value="SURESTE">SURESTE</option>
+                    <option value="SUROESTE">SUROESTE</option>
+                    <option value="NORESTE">NORESTE</option>
+                    <option value="NOROESTE">NOROESTE</option>
+                  </select>
+
+                  <input type="text" class="dotted" style="width: 600px" value="">
                 </div>
 
                 <div>
+                  <select style="width: 90px;" class="field-label">
+                    <option value="NORTE">NORTE</option>
+                    <option value="SUR">SUR</option>
+                    <option value="ESTE">ESTE</option>
+                    <option value="OESTE">OESTE</option>
+                    <option value="SURESTE">SURESTE</option>
+                    <option value="SUROESTE">SUROESTE</option>
+                    <option value="NORESTE">NORESTE</option>
+                    <option value="NOROESTE">NOROESTE</option>
+                  </select>
 
-                  <span class="field-label">AL SUR:</span>
-                  <input type="text" class="dotted" style="width: 650px" value="">
+                  <input type="text" class="dotted" style="width: 600px" value="">
                 </div>
                 <div>
-                  <span class="field-label">AL ORIENTE:</span>
-                  <input type="text" class="dotted" style="width: 625px" value="">
+
+                  <select style="width: 90px;" class="field-label">
+                    <option value="NORTE">NORTE</option>
+                    <option value="SUR">SUR</option>
+                    <option value="ESTE">ESTE</option>
+                    <option value="OESTE">OESTE</option>
+                    <option value="SURESTE">SURESTE</option>
+                    <option value="SUROESTE">SUROESTE</option>
+                    <option value="NORESTE">NORESTE</option>
+                    <option value="NOROESTE">NOROESTE</option>
+                  </select>
+
+                  <input type="text" class="dotted" style="width: 600px" value="">
                 </div>
                 <div>
-                  <span class="field-label">AL PONIENTE:</span>
-                  <input type="text" class="dotted" style="width: 617px" value="">
+
+                  <select style="width: 90px;">
+                    <option value="NORTE">NORTE</option>
+                    <option value="SUR">SUR</option>
+                    <option value="ESTE">ESTE</option>
+                    <option value="OESTE">OESTE</option>
+                    <option value="SURESTE">SURESTE</option>
+                    <option value="SUROESTE">SUROESTE</option>
+                    <option value="NORESTE">NORESTE</option>
+                    <option value="NOROESTE">NOROESTE</option>
+                  </select>
+
+                  <input type="text" class="dotted" style="width: 600px" value="">
                 </div>
               </div>
             </div>
           </div>
-        </div>
+      </div>
       </table>
       <table>
         <div class="e">
@@ -298,48 +360,77 @@
             <div class="section footer">
             </div>
           </div>
+
       </table>
-    </div>
-    <!-- ------------------------------------------------------>
-
-    <article>
-      <h1>Recipient</h1>
-      <address contenteditable>
-
-      </address>
-      <table class="meta">
-        <tr>
-          <th><span contenteditable>Valor Base</span></th>
-          <td><span contenteditable>&#36;</span></td>
-        </tr>
-        <tr>
-          <th><span contenteditable>Limite Inferior</span></th>
-          <td><span contenteditable>&#36;</span></td>
-        </tr>
-        <tr>
-          <th><span contenteditable>Base Del Impuesto</span></th>
-          <td><span contenteditable>&#36;</span></td>
-          <!-- <td style="padding:3px  3px" border-width: 1px;><input type="text" id="datepicker" placeholder="Select Date"> -->
-          </td>
-        </tr>
-        <tr>
-          <th><span contenteditable>Recargos</span></th>
-          <td><span contenteditable>&#36;</span></td>
-          <!-- <td style="padding:3px  3px" border-width: 1px;><input type="text" id="datepicker" placeholder="Select Date"> -->
-        </tr>
-        <tr>
-          <th><span contenteditable>Multa</span></th>
-          <td><span contenteditable>&#36;</span></td>
-        </tr>
-        <tr>
-          <th><span contenteditable>Total</span></th>
-          <td><span contenteditable>&#36;</span></td>
-        </tr>
-        <tr>
-
+      <table class="meta3">
+        <tr class="tr2"><br>
+          <th class="th2n"><span contenteditable>FIRMA DEL NOTARIO RESPONSABLE</span></th>
+          <!-- <td class="td2"><span contenteditable>&#36;</span></td> -->
         </tr>
       </table>
-      <!-- <table class="inventory">
+
+
+
+
+      <!-- ------------------------------------------------------>
+
+      <article>
+        <!-- <h1>Recipient</h1> -->
+        <address contenteditable>
+        </address>
+        <table class="meta">
+          <tr>
+            <th><span contenteditable>Valor Base</span></th>
+            <td><span contenteditable>&#36;</span></td>
+          </tr>
+          <tr>
+            <th><span contenteditable>Limite Inferior</span></th>
+            <td><span contenteditable>&#36;</span></td>
+          </tr>
+          <tr>
+            <th><span contenteditable>Base Del Impuesto</span></th>
+            <td><span contenteditable>&#36;</span></td>
+            <!-- <td style="padding:3px  3px" border-width: 1px;><input type="text" id="datepicker" placeholder="Select Date"> -->
+            </td>
+          </tr>
+          <tr>
+            <th><span contenteditable>Recargos</span></th>
+            <td><span contenteditable>&#36;</span></td>
+            <!-- <td style="padding:3px  3px" border-width: 1px;><input type="text" id="datepicker" placeholder="Select Date"> -->
+          </tr>
+          <tr>
+            <th><span contenteditable>Multa</span></th>
+            <td><span contenteditable>&#36;</span></td>
+          </tr>
+          <tr>
+            <th><span contenteditable>Total</span></th>
+            <td><span contenteditable>&#36;</span></td>
+          </tr>
+
+        </table>
+
+
+        <table class="meta2">
+          <br>
+
+          <th class="th2"> <br><span class="spanm" contenteditable>Observaciones</span><br><br><textarea class="texta"
+              placeholder="Escribe las Observaciones" rows="4" cols="50" value=" "></textarea>
+            </td>
+
+
+
+
+
+
+        </table>
+
+
+
+
+
+
+
+        <!-- <table class="inventory">
         <thead>
           <tr>
             <th><span contenteditable>Item</span></th>
@@ -361,15 +452,79 @@
 
         </tbody>
       </table> -->
-      <a class="add">+</a>
-    </article>
+        <!-- <a class="add">+</a> -->
+      </article>
+      <span>
+        <div class="f">
+          <div class="section top">
+            <u class="title8">CERTIFICACIÓN DE REGISTRO:</u><br>
+            <div><br><br>
+
+              <span class="spanm" style=" font-weight: 500; font-size:13px; ">
+                <p class="field-label"
+                  style="text-align:center; font-size:13px; font-weight: 500;  position: relative; overflow: hidden; white-space: nowrap;width: 1000px; top:20px;">
+                  MANZANILLO,
+                  COLIMA A :
+                  <select style="width: 90px;" class="field-label">
+                    <option value="Lunes">Lunes</option>
+                    <option value="Martes">Martes</option>
+                    <option value="Miércoles">Miércoles</option>
+                    <option value="Jueves">Jueves</option>
+                    <option value="Viernes">Viernes</option>
+                  </select>
+                  <input type="text" class="dotted" placeholder="dia"
+                    style="  font-weight: 500;width: 40px;top:-0px;left:-0px;" value="">de <input type="month"
+                    class="dotted" placeholder="ingresar mes" style="width: 120px;top:-0px;left:0px; " value="">
+              </span><br>
+              </p>
+              <p class="field-label"
+                style="text-align:center; font-size:13px; font-weight: 500;  position: relative; overflow: hidden; white-space: nowrap;width: 1000px; top:20px;">
+                CON
+                ESTA FECHA QUEDÓ REGISTRADA LA TRANSMISIÓN PATRIMONIAL <br>EN LA DIRECCIÓN GENERAL DEL CATASTRO DE ESTE
+                MUNICIPIO, CON LA ORDEN DE PAGO No
+                <input type="number" class="dotted" placeholder="No. Orden de pago"
+                  style="  font-weight: 500;width: 150px;left:0px;text-align:center; position: relative; overflow: hidden; white-space: nowrap;"
+                  value=""><br>
+                .
+              </p>
+
+            </div><br>
+            <u class="title7"
+              style=" font-size:13px; font-weight: 500;top:70px; position: relative; overflow: hidden; white-space: nowrap;">DIRECTOR
+              GENERAL DE CATASTRO
+            </u><br>
+            <br>
+            <div>
+
+              <span class="title7"
+                style=" font-size:13px; font-weight: 500;top:250px;left:-20px; position: relative; overflow: hidden; white-space: nowrap; "><svg
+                  height="50" width="300" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="25" y1="2" x2="400" y2="2"
+                    style="stroke:black;stroke-width:1; left:10px; position: relative;overflow: hidden;white-space: nowrap;" />
+                  Sorry, your browser does not support inline SVG.
+                </svg></span>
+            </div>
+
+            <!-- <div>
+              <span class="field-label">Demarcación:</span>
+              <input type="text" class="dotted" style="width: 100px;top:100px;" value=""><br>
+            </div> -->
+            <div><br>
+              <div class="section footer">
+              </div>
+            </div>
+          </div>
+      </span>
 
 </body>
 <!----------------article---------------------------------------->
-
+<BR>
+<BR></BR></BR>
 <aside class="central_btn">
-  <button onclick="myFunction()" style="cursor:pointer"><i class="fa fa-print" aria-hidden="true"></i> exportar
+  <button onclick="myFunction()" style="cursor:pointer ;top:150px;"><i class="fa fa-print" aria-hidden="true"></i>
+    exportar
     Documento</button>
+
   <!-- <button id="cmd"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Save PDF</button> -->
 </aside>
 <section class="signature">

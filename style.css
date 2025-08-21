@@ -204,7 +204,10 @@ article address {
 table.meta,
 table.balance {
   float: right;
-  width: 45%;
+  width: 40%;
+
+
+
 }
 
 table.meta:after,
@@ -212,18 +215,23 @@ table.balance:after {
   clear: both;
   content: "";
   display: table;
+
 }
 
 /* table meta */
 
 table.meta th {
-  width: 40%;
-  top: -250px;
+  width: 150%;
+  height: 15px;
+  top: 0px;
+  font-size: 10px;
+
 }
 
 table.meta td {
-  width: 60%;
-  top: -250px;
+  width: 150%;
+  height: 15px;
+  top: 0px;
 }
 
 /* table items */
@@ -305,16 +313,15 @@ aside h1 {
   padding: 0.25em 0.5em;
   float: left;
   text-align: center;
-  width: 0.6em;
-
-
+  width: 0.5em;
+  top: 50px;
 }
 
 .add,
 .cut {
 
   background-position: 0% 0%;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
   border-radius: 0.5em;
   border-color: #0076A3;
   color: #FFF;
@@ -328,8 +335,10 @@ aside h1 {
 }
 
 .add {
-  margin: -2.5em 0 0;
-
+  opacity: 10;
+  position: absolute;
+  top: 1;
+  left: -1.5em;
 
 }
 
@@ -339,20 +348,28 @@ aside h1 {
 }
 
 .cut {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
-  top: 0;
+  top: 1px;
   left: -1.5em;
+
 
 }
 
-.cut {
+.cut,
+.add {
   -webkit-transition: opacity 100ms ease-in;
 
 }
 
 tr:hover .cut {
   opacity: 1;
+
+}
+
+tr:hover .add {
+  opacity: 1;
+
 }
 
 @media print {
@@ -559,12 +576,16 @@ th .ui-datepicker-week-end {
 .section.footer {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+
+
 }
 
 .section.center {
   padding: 5px;
   display: grid;
   grid-template-columns: 2fr 2fr 2fr 2fr;
+
 
   .program-field {
     grid-column: 1/-1;
@@ -598,6 +619,7 @@ th .ui-datepicker-week-end {
   border-collapse: separate;
   border: 1.5px solid #0000004c;
   border: 1px solid transparent;
+
 
 
 
@@ -910,6 +932,12 @@ p {
   text-align: center;
 }
 
+.b2 {
+  position: relative;
+  top: 120px;
+  text-align: center;
+}
+
 .content {
   font-size: 12px;
   position: relative;
@@ -977,4 +1005,128 @@ p {
   top: -1px;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.title7 {
+  font-size: 15px;
+  left: 250px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  top: -0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.title8 {
+  font-size: 15px;
+  left: 250px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  top: -0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+table.meta2 {
+  float: left;
+  width: 50%;
+  top: 0px;
+  height: 100px;
+
+}
+
+table.meta2:after {
+  clear: both;
+
+  content: "";
+  display: table;
+}
+
+table.meta3 {
+  float: left;
+  width: 50%;
+  top: 50px;
+  height: 205px;
+  font-size: 12px;
+}
+
+table.meta3:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.td2 {
+  width: 405px;
+  top: 250px;
+  height: 100px;
+  left: -423px;
+  float: center;
+}
+
+.th2 {
+
+  font-size: 15px;
+  width: 397px;
+  top: -20px;
+  height: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  row-gap: 4;
+}
+
+
+.th3 {
+  width: 4100px;
+  top: 0px;
+  height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+
+}
+
+.th2n {
+
+  width: 400px;
+  text-align: inherit;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.td4 {
+  width: 405px;
+  top: -110px;
+  height: 75px;
+  left: -420px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+
+}
+
+.f {
+  position: relative;
+  top: -40px;
+  text-align: center;
+}
+
+.spanm {
+  left: -3px;
+}
+
+.texta {
+  width: 300px;
+  height: 80px;
+  background: #EEE;
+  border-color: #000000;
+  border-radius: 5px;
+  left: -30px;
+  grid-row: auto;
 }
